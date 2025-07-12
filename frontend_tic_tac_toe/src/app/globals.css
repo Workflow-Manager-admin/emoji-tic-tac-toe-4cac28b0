@@ -12,6 +12,17 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Animated keyframes for text fun */
+@keyframes shake {
+  10%, 90% { transform: translateX(-2px);}
+  20%, 80% { transform: translateX(3px);}
+  30%, 50%, 70% { transform: translateX(-4px);}
+  40%, 60% { transform: translateX(4px);}
+}
+.animate-shake {
+  animation: shake 0.85s cubic-bezier(.36,.07,.19,.97) both;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
